@@ -1,0 +1,27 @@
+{
+  "name": "octocat-issues-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vestelth/octocat-issues-app.git"
+  },
+  "author": "mdawidowicz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Vestelth/octocat-issues-app/issues"
+  },
+  "homepage": "https://github.com/Vestelth/octocat-issues-app#readme",
+  "dependencies": {
+    "gulp": "^4.0.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-watch-sass": "^1.4.1"
+  }
+}
