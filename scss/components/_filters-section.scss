@@ -1,8 +1,14 @@
 .filters-section {
+  position: relative;
+  width: 100%;
   overflow: hidden;
   border-top-left-radius: 15px;
   border-bottom-left-radius: 15px;
   z-index: 0;
+
+  @include breakpoint(sm) {
+    width: 23%;
+  }
 
   &::before {
     content: '';

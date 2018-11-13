@@ -1,0 +1,27 @@
+.filters-section__window-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  height: 40px;
+  padding-left: 15px;
+
+  .dot {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 8px;
+
+    &--red {
+      background-color: $red;
+    }
+
+    &--yellow {
+      background-color: $yellow;
+    }
+
+    &--green {
+      background-color: $green;
+    }
+  }
+}

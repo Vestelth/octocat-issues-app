@@ -20,21 +20,3 @@
     flex-wrap: nowrap;
   }
 }
-
-.filters-section {
-  position: relative;
-  width: 100%;
-
-  @include breakpoint(sm) {
-    width: 23%;
-  }
-}
-
-.issue-list-section {
-  width: 100%;
-  overflow-y: auto;
-
-  @include breakpoint(sm) {
-    width: 77%;
-  }
-}

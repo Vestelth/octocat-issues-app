@@ -1,0 +1,32 @@
+.filters-section__filter-list {
+  .filter {
+    &:active,
+    &:hover {
+      background: $martinique;
+    }
+
+    a {
+      display: block;
+      color: $white;
+      font-size: 1rem;
+      padding: 16px 0 16px 15px;
+    }
+
+    &__txt {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &--all {
+
+    }
+
+    &--open {
+
+    }
+
+    &--closed {
+
+    }
+  }
+}
