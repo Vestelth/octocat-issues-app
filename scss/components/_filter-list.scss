@@ -6,15 +6,21 @@
     }
 
     a {
-      display: block;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
       color: $white;
-      font-size: 1rem;
-      padding: 16px 0 16px 15px;
+      font-size: .875rem;
+      padding: 15px;
     }
 
     &__txt {
-      display: inline-block;
-      vertical-align: middle;
+      margin-left: 8px;
+    }
+    &__counter {
+      flex: 1 0 auto;
+      text-align: right;
     }
 
     &--all {
