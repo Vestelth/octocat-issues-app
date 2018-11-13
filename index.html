@@ -16,34 +16,34 @@
 
       <div class="github-issues-panel">
 
-        <section class="issue-filters-section">
-          <ul class="window-interaction">
-            <li><a href="#"><span class="red"></span></a></li>
-            <li><a href="#"><span class="yellow"></span></a></li>
-            <li><a href="#"><span class="green"></span></a></li>
+        <section class="filters-section">
+          <ul class="filters-section__window-interaction">
+            <li><a href="#"><span class="dot--red"></span></a></li>
+            <li><a href="#"><span class="dot--yellow"></span></a></li>
+            <li><a href="#"><span class="dot--green"></span></a></li>
           </ul>
 
           <nav>
-            <ul class="filters">
-              <li class="issues-all">
-                <a href="#">
-                  <img src="" alt="">
+            <ul class="filters-section__filters">
+              <li class="filter--all">
+                <a class="" href="#">
+                  <img class="filter__img" src="" alt="">
                   All
-                  <span class="counter">12</span>
+                  <span class="filter__counter">12</span>
                 </a>
               </li>
-              <li class="issues-open">
-                <a href="#">
-                  <img src="" alt="">
+              <li class="filter--open">
+                <a class="" href="#">
+                  <img class="filter__img" src="" alt="">
                   Open
-                  <span class="counter">4</span>
+                  <span class="filter__counter">4</span>
                 </a>
               </li>
-              <li class="issues-closed">
-                <a href="#">
-                  <img src="" alt="">
+              <li class="filter--closed">
+                <a class="" href="#">
+                  <img class="filter__img" src="" alt="">
                   Closed
-                  <span class="counter">8</span>
+                  <span class="filter__counter">8</span>
                 </a>
               </li>
             </ul>
@@ -52,56 +52,81 @@
 
 
         <section class="issue-list-section">
-          <ul class="list-by-day">
+          <ul class="publication-day-list">
 
-            <!-- issue day -->
-            <li class="date">
-              <time>19-07-2016</time>
+            <!-- day -->
+            <li class="publication-day">
+              <time class="publication-date">19-07-2016</time>
 
-              <ul>
+              <ul class="issues-list">
                 <li class="issue">
-                  <span class="issue-title">Page changes</span>
-                  <span class="icon star-icon"></span>
+                  <h3 class="issue__title">Page changes</h3>
+                  <label class="issue__label" for="star-issue">
+                    <input type="checkbox" id="star-issue">
+                    <span class="issue__icon--on icon"></span>
+                  </label>
                 </li>
-                <li class="issue">
-                  <span class="issue-title">Review of last issues</span>
-                  <span class="icon star-icon"></span>
-                </li>
-              </ul>
-            </li>
 
-            <!-- issue day -->
-            <li class="date">
-              <time>18-07-2016</time>
-
-              <ul>
                 <li class="issue">
-                  <span class="issue-title">Visual UI Update Review</span>
-                  <span class="icon star-icon"></span>
-                </li>
-                <li class="issue">
-                  <span class="issue-title">Sidebar changes</span>
-                  <span class="icon star-icon"></span>
+                  <h3 class="issue__title">Review of last issues</h3>
+                  <label class="issue__label" for="star-issue">
+                    <input type="checkbox" id="star-issue">
+                    <span class="issue__icon--on icon"></span>
+                  </label>
                 </li>
               </ul>
             </li>
 
-            <!-- issue day -->
-            <li class="date">
-              <time>15-07-2016</time>
+            <!-- day -->
+            <li class="publication-day">
+              <time class="publication-date">18-07-2016</time>
 
-              <ul>
+              <ul class="issues-list">
                 <li class="issue">
-                  <span class="issue-title">Crash update</span>
-                  <span class="icon star-icon"></span>
+                  <h3 class="issue__title">Visual UI Update Review</h3>
+                  <label class="issue__label" for="issue-star">
+                    <input type="checkbox" id="issue-star">
+                    <span class="issue__icon--on icon"></span>
+                  </label>
                 </li>
+
                 <li class="issue">
-                  <span class="issue-title">Page visual UI Update Review</span>
-                  <span class="icon star-icon"></span>
+                  <h3 class="issue__title">Sidebar changes</h3>
+                  <label class="issue__label" for="issue-star">
+                    <input type="checkbox" id="issue-star">
+                    <span class="issue__icon--on icon"></span>
+                  </label>
                 </li>
+              </ul>
+            </li>
+
+            <!-- day -->
+            <li class="publication-day">
+              <time class="publication-date">15-07-2016</time>
+
+              <ul class="issues-list">
                 <li class="issue">
-                  <span class="issue-title">Sidebar update</span>
-                  <span class="icon star-icon"></span>
+                  <h3 class="issue__title">Crash update</h3>
+                  <label class="issue__label" for="issue-star">
+                    <input type="checkbox" id="issue-star">
+                    <span class="issue__icon--on icon"></span>
+                  </label>
+                </li>
+
+                <li class="issue">
+                  <h3 class="issue__title">Page visual UI Update Review</h3>
+                  <label class="issue__label" for="issue-star">
+                    <input type="checkbox" id="issue-star">
+                    <span class="issue__icon--on icon"></span>
+                  </label>
+                </li>
+
+                <li class="issue">
+                  <h3 class="issue__title">Sidebar update</h3>
+                  <label class="issue__label" for="issue-star">
+                    <input type="checkbox" id="issue-star">
+                    <span class="issue__icon--on icon"></span>
+                  </label>
                 </li>
               </ul>
             </li>
