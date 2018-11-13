@@ -353,6 +353,7 @@ body {
 body {
   font-family: 'robotoregular', sans-serif;
   font-size: 10px;
+  -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
 }
 
@@ -371,13 +372,11 @@ ul {
 
 .github-issues-panel {
   display: flex;
-  flex-wrap: wrap;
-  align-items: row;
+  flex-direction: row;
   width: 100%;
   height: 100%;
   max-width: 650px;
   max-height: 500px;
-  overflow: auto;
   border-radius: 15px;
   margin: 250px auto 0 auto;
   box-shadow: 0 0 15px 0;
@@ -390,6 +389,7 @@ ul {
 }
 
 .filters-section {
+  position: relative;
   width: 100%;
 }
 
@@ -401,10 +401,44 @@ ul {
 
 .issue-list-section {
   width: 100%;
+  overflow-y: auto;
 }
 
 @media (min-width: 768px) {
   .issue-list-section {
     width: 77%;
   }
+}
+
+.filters-section {
+  overflow: hidden;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  z-index: 0;
+}
+
+.filters-section::before {
+  content: '';
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  width: 100%;
+  height: 100%;
+  background: url("../assets/img/background-b.jpg") no-repeat center/cover;
+  background-attachment: fixed;
+  -webkit-filter: url("#blur");
+  filter: url("#blur");
+  padding: 15px;
+  z-index: -1;
+}
+
+.filters-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 21, 40, 0.9);
+  z-index: -1;
 }
