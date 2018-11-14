@@ -9,7 +9,7 @@
 
   @include breakpoint(sm) {
     width: 23%;
-    border-top-left-radius: 15px;
+    border-top-right-radius: 0;
     border-bottom-left-radius: 15px;
   }
 

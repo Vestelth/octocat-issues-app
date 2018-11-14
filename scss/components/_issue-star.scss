@@ -1,0 +1,20 @@
+.issue__label.star {
+  cursor: pointer;
+
+  input[type="checkbox"] {
+    display: none;
+
+    &:checked + .icon {
+      .cls-1 {
+        fill: $ebony-clay;
+      }
+    }
+
+    &:not(:checked) + .icon {
+      .cls-1 {
+        fill: transparent;
+        stroke: $alto;
+      }
+    }
+  }
+}
