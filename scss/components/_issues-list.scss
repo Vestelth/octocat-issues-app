@@ -1,0 +1,22 @@
+.issues-list {
+  .issue {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 11px;
+    background-color: $white;
+    border-radius: 5px;
+    border: 1px solid $alto;
+    margin-bottom: 5px;
+
+    &:last-child {
+      margin-bottom: 11px;
+    }
+  }
+
+  .issue__title {
+    font-size: .9375rem;
+    margin: 0;
+  }
+}

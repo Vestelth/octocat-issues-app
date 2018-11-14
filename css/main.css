@@ -384,7 +384,7 @@ ul {
 
 .github-issues-panel {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   height: 100%;
   max-width: 650px;
@@ -397,26 +397,29 @@ ul {
 @media (min-width: 768px) {
   .github-issues-panel {
     flex-wrap: nowrap;
+    flex-direction: row;
   }
 }
 
 .filters-section {
   position: relative;
   width: 100%;
-  overflow: hidden;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
   z-index: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+  min-height: 200px;
 }
 
 @media (min-width: 768px) {
   .filters-section {
     width: 23%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
 }
 
 .filters-section::before {
-  content: '';
   position: absolute;
   top: -10px;
   left: -10px;
@@ -428,6 +431,12 @@ ul {
   filter: url("#blur");
   padding: 15px;
   z-index: -1;
+}
+
+@media (min-width: 768px) {
+  .filters-section::before {
+    content: '';
+  }
 }
 
 .filters-section::after {
@@ -442,7 +451,19 @@ ul {
 }
 
 .issue-list-section {
+  flex: 1 0 auto;
+  background-color: #f6f6f6;
+  overflow-y: auto;
   padding: 11px 20px 0 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+@media (min-width: 768px) {
+  .issue-list-section {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
 }
 
 .filters-section__window-nav {
@@ -497,7 +518,7 @@ ul {
   align-items: center;
   color: #fff;
   font-size: .875rem;
-  padding: 15px;
+  padding: 17px 15px;
 }
 
 .filters-section__filter-list .filter__txt {
@@ -506,5 +527,34 @@ ul {
 
 .filters-section__filter-list .filter__counter {
   flex: 1 0 auto;
+  color: #8a8995;
   text-align: right;
+}
+
+.publication-day-list .publication-date {
+  display: block;
+  font-size: .75rem;
+  color: #8a8995;
+  margin-bottom: 10px;
+}
+
+.issues-list .issue {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 5px;
+}
+
+.issues-list .issue:last-child {
+  margin-bottom: 11px;
+}
+
+.issues-list .issue__title {
+  font-size: .9375rem;
+  margin: 0;
 }

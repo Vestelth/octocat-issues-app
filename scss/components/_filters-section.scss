@@ -1,17 +1,19 @@
 .filters-section {
   position: relative;
   width: 100%;
-  overflow: hidden;
-  border-top-left-radius: 15px;
-  border-bottom-left-radius: 15px;
   z-index: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  overflow: hidden;
+  min-height: 200px;
 
   @include breakpoint(sm) {
     width: 23%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
   }
 
   &::before {
-    content: '';
     position: absolute;
     top: -10px;
     left: -10px;
@@ -23,6 +25,10 @@
     filter: url('#blur');
     padding: 15px;
     z-index: -1;
+
+    @include breakpoint(sm) {
+      content: '';
+    }
   }
 
   &::after {
