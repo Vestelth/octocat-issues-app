@@ -472,6 +472,7 @@ ul {
   display: flex;
   align-items: center;
   flex-direction: row;
+  background-color: #101022;
   height: 40px;
   padding-left: 15px;
 }
@@ -558,6 +559,7 @@ ul {
 
 .issues-list .issue__title {
   font-size: .9375rem;
+  font-weight: normal;
   margin: 0;
 }
 
